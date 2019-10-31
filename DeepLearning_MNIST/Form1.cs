@@ -154,7 +154,7 @@ namespace DeepLearning_MNIST
                     sfd.FileName = sfd.FileName + ".hdl";
                 }
                 HOperatorSet.WriteDlClassifier(this.mnist.mnist_Train.hv_Train_DLClassifierHandle, sfd.FileName);
-                this.textBoxInformation.Text = "分类器已保存：\r\n" + this.mnist.mnist_Train.hv_Train_DLClassifierHandle.ToString();
+                this.textBoxInformation.Text = "分类器已保存：\r\n" + sfd.FileName;
 
             }
         }
