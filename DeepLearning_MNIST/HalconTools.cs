@@ -4236,12 +4236,14 @@ namespace DeepLearning_MNIST
                         {
                             hv_Row = hv_TextRow.TupleSelect(
                                 hv_Index);
+                            HOperatorSet.GetStringExtents(hv_WindowHandle, hv_Text, out hv_Ascent,
+                                out hv_Descent, out hv_StringWidth, out hv_StringHeight);
                         }
                         hv_Column.Dispose();
                         using (HDevDisposeHelper dh = new HDevDisposeHelper())
                         {
                             hv_Column = ((hv_TextColumn.TupleSelect(
-                                0)) - hv_MaxStringWidth);
+                                0)) - hv_MaxStringWidth)-hv_StringWidth;
                         }
                         //if (HDevWindowStack.IsOpen())
                         {
@@ -4259,7 +4261,7 @@ namespace DeepLearning_MNIST
                         using (HDevDisposeHelper dh = new HDevDisposeHelper())
                         {
                             hv_Column = hv_TextColumn.TupleSelect(
-                                hv_Index * hv_NumClasses)+20;
+                                hv_Index * hv_NumClasses)+20-hv_StringWidth;
                         }
                         //if (HDevWindowStack.IsOpen())
                         {
