@@ -1,4 +1,4 @@
-#DeepLearning_MNIST 本资源用于交流学习，论坛地址https://www.51halcon.com/thread-3881-1-1.html
+#DeepLearning_MNIST 本资源用于交流学习，完全免费分享，论坛地址https://www.51halcon.com/thread-3881-1-1.html
 本例基于Halcon深度学习，需要安装Halcon深度学习环境，参考https://blog.csdn.net/xuanbi8560/article/details/80911015
 
 1 预处理图像
