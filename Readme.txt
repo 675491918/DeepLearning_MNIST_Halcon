@@ -1,4 +1,4 @@
-#DeepLearning_MNIST 本资源用于交流学习，转载请引用出处https://github.com/675491918/DeepLearning_MNIST_Halcon
+#DeepLearning_MNIST 本资源用于交流学习，源代码地址https://github.com/675491918/DeepLearning_MNIST_Halcon
 本例基于Halcon深度学习，需要安装Halcon深度学习环境，参考https://blog.csdn.net/xuanbi8560/article/details/80911015
 
 1 预处理图像
