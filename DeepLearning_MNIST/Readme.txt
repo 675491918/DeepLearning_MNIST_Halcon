@@ -1,5 +1,5 @@
-#DeepLearning_MNIST 
-本例基于Halcon深度学习，需要安装Halcon深度学习环境，参考https://blog.csdn.net/xuanbi8560/article/details/80911015
+#DeepLearning_MNIST_Halcon
+欢迎前往论坛地址交流学习https://www.51halcon.com/thread-3881-1-1.html
 
 1 预处理图像
 1.1 选择图像目录
