@@ -90,12 +90,13 @@ namespace DeepLearning_MNIST
             hv_Inference_PredictedClass.Dispose();
             HOperatorSet.GetDlClassifierResult(hv_DLClassifierResultHandle, "all", "predicted_classes",
                 out hv_Inference_PredictedClass);
+            HOperatorSet.GetDlClassifierResult(hv_DLClassifierResultHandle, "all", "confidences", out hv_Inference_Confidences);
             //
             DispImageAdaptively(ref hv_HWindowControl, this.ho_TestImage);
             hv_Text.Dispose();
             using (HDevDisposeHelper dh = new HDevDisposeHelper())
             {
-                hv_Text = "Predicted class: " + hv_Inference_PredictedClass;
+                hv_Text = "Predicted class: " + hv_Inference_PredictedClass+ ";  Confidence: "+ hv_Inference_Confidences;
             }
             HOperatorSet.DispText(hv_HWindowControl.HalconWindow, hv_Text, "window", "top", "left", "red", "box", "true");
 
