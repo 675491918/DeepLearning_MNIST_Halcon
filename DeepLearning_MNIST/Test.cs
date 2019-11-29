@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +13,7 @@ namespace DeepLearning_MNIST
         public string path_Test_Images;
         //测试图像变量
         public HObject ho_TestImage = new HObject();
-        //测试图像名称变量
+        //测试图像文件名
         public string ho_TestImageName = null;
         //预处理图像变量
         public HObject ho_Preprocessed_TestImage = new HObject();
@@ -22,7 +22,11 @@ namespace DeepLearning_MNIST
         //用于测试的分类器句柄
         public HTuple hv_Test_DLClassifierHandle = new HTuple();
         //运行模式 CPU / GPU
-        HTuple hv_Runtime = new HTuple();
+        private HTuple hv_Runtime = new HTuple();
+        //预测结果
+        private HTuple hv_Inference_PredictedClass = new HTuple();
+        //预测结果可信度
+        private HTuple hv_Inference_Confidences = new HTuple();
 
         public Test()
         {
@@ -47,7 +51,7 @@ namespace DeepLearning_MNIST
 
             HObject ho_ImagePreprocessed = new HObject();
             HTuple hv_DLClassifierResultHandle = new HTuple();
-            HTuple hv_Inference_PredictedClass = new HTuple();
+            
 
             HTuple hv_Exception = new HTuple();
             HTuple hv_Text = new HTuple();
